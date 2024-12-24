@@ -42,6 +42,7 @@
             border-radius: 20px;
             margin-top: 20px;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-out;
         }
 
         @keyframes fadeIn {
@@ -83,6 +84,11 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin: 20px auto;
+            transition: transform 0.3s ease;
+        }
+
+        .about-me img:hover {
+            transform: scale(1.05);
         }
 
         .favorites ul {
@@ -142,6 +148,17 @@
             background: #feb47b;
         }
 
+        .hidden-notes {
+            margin-top: 30px;
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            font-style: italic;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -167,6 +184,12 @@
             color: #333;
         }
     </style>
+    <script>
+        function toggleNotes() {
+            const notes = document.querySelector('.hidden-notes');
+            notes.style.display = notes.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -225,6 +248,14 @@
         <button onclick="alert('Correct! Lyrics with meaning resonate deeply with me.')">A. Music with meaningful lyrics</button>
         <button onclick="alert('Not quite! While I like music, meaningful lyrics steal my heart.')">B. Classical</button>
         <button onclick="alert('Not quite! While I like music, meaningful lyrics steal my heart.')">C. Pop</button>
+    </section>
+
+    <section>
+        <h3>Discover Hidden Notes</h3>
+        <button onclick="toggleNotes()">Reveal Notes</button>
+        <div class="hidden-notes">
+            "Sometimes the best things in life are the ones we stumble upon unexpectedly."
+        </div>
     </section>
 
     <section class="special-message">
