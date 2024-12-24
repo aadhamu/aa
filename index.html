@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Adamu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            animation: fadeIn 2s ease-out;
+            font-family: 'Playfair Display', serif;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        header img {
+            width: 220px;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .about-me {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-me img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+        }
+
+        .favorites ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .favorites ul li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .notes-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .notes-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .notes-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .quiz {
+            margin-top: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .quiz h3 {
+            color: #ff7e5f;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .quiz button {
+            background: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .quiz button:hover {
+            background: #feb47b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .special-message {
+            margin-top: 40px;
+            background: white;
+            color: #ff7e5f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .special-message h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+        }
+
+        .special-message p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Hi, Abida</h1>
+            <p>Welcome to a little slice of my world 🌟</p>
+            <img src="/images/me1.jpg" alt="Adamu's Picture">
+        </div>
+    </header>
+
+    <section class="about-me">
+        <h2 class="section-title">About Me</h2>
+        <p>I'm Adamu—a second-year Software Engineering student at Lincoln College. I love walking, music with soulful lyrics, and diving into stories that explore the depth of human emotions. Writing is my way of reflecting and connecting with the world around me.</p>
+        <img src="/images/me2.jpg" alt="Adamu Picture 2">
+    </section>
+
+    <section class="favorites">
+        <h2 class="section-title">Favorites</h2>
+        <ul>
+            <li><strong>Favorite Romance Book:</strong> Eleanor and Park</li>
+            <li><strong>Favorite Romance Movies:</strong> The Notebook, Premalu, A Family Star</li>
+        </ul>
+    </section>
+
+    <section class="notes">
+        <h2 class="section-title">My Personal Notes</h2>
+        <p>Here’s a glimpse into my thoughts and reflections through some of my personal notes:</p>
+        <div class="notes-gallery">
+            <img src="/images/notes1.jpg" alt="Note 1">
+            <img src="/images/notes2.jpg" alt="Note 2">
+            <img src="/images/notes3.jpg" alt="Note 3">
+            <img src="/images/notes4.jpg" alt="Note 4">
+            <img src="/images/notes5.jpg" alt="Note 5">
+            <img src="/images/notes6.jpg" alt="Note 6">
+            <img src="/images/notes7.jpg" alt="Note 7">
+            <img src="./images/notes8.jpg" alt="Note 8">
+            <img src="/images/notes9.jpg" alt="Note 9">
+            <img src="/images/notes10.jpg" alt="Note 10">
+        </div>
+    </section>
+
+    <section class="quiz">
+        <h3>How Well Do You Know Me?</h3>
+        <p>Let’s have some fun! Answer these questions and see how much you know about me!</p>
+        <p><strong>Question 1:</strong> What’s my dream job?</p>
+        <button onclick="alert('Correct! Flying symbolizes freedom and ambition for me.')">A. Pilot</button>
+        <button onclick="alert('Close! But flying is my ultimate dream.')">B. Software Developer</button>
+        <button onclick="alert('Interesting guess, but flying is my dream.')">C. Writer</button>
+
+        <p><strong>Question 2:</strong> What’s my favorite way to unwind?</p>
+        <button onclick="alert('Exactly! Walking clears my mind and soothes my soul.')">A. Taking a walk</button>
+        <button onclick="alert('Not quite. I do love music, but walking is my favorite.')">B. Listening to music</button>
+        <button onclick="alert('Interesting guess, but walking is my go-to.')">C. Reading</button>
+
+        <p><strong>Question 3:</strong> What type of music do I love?</p>
+        <button onclick="alert('Correct! Lyrics with meaning resonate deeply with me.')">A. Music with meaningful lyrics</button>
+        <button onclick="alert('Not quite! While I like music, meaningful lyrics steal my heart.')">B. Classical</button>
+        <button onclick="alert('Not quite! While I like music, meaningful lyrics steal my heart.')">C. Pop</button>
+    </section>
+
+    <section class="special-message">
+        <h3>A Message for You</h3>
+        <p>I created this page as a window into my world. It’s not just about me—it’s a reflection of how I see life, connect with emotions, and share my thoughts. I hope you enjoy exploring this as much as I enjoyed creating it!</p>
+    </section>
+
+    <footer>
+        <p>Designed with 💙 by Adamu</p>
+    </footer>
+</body>
+</html>
